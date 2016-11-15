@@ -154,4 +154,15 @@ public class Project {
 		this.tasks = tasks;
 	}
 
+	public void addTask(Task t) {
+		// TODO Auto-generated method stub
+		this.tasks = (List<Task>) t;
+		
+	}
+
+	public void addBeneficiaries(Beneficiaries b) {
+		// TODO Auto-generated method stub
+		this.beneficiaries = (List<Beneficiaries>) b;
+	}
+
 }
