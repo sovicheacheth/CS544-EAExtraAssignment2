@@ -164,5 +164,12 @@ public class Project {
 		// TODO Auto-generated method stub
 		this.beneficiaries = (List<Beneficiaries>) b;
 	}
+	
+	public Project(){}
+
+	public void setStatus(Status pending) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

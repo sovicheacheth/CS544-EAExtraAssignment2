@@ -36,6 +36,9 @@ public class Resource {
 		this.id = id;
 		this.name = name;
 	}
+	public Resource() {
+		// TODO Auto-generated constructor stub
+	}
 	
 	
 

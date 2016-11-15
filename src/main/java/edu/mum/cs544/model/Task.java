@@ -95,4 +95,8 @@ public class Task {
 		this.status = status;
 	}
 
+	public Task() {
+		// TODO Auto-generated constructor stub
+	}
+
 }

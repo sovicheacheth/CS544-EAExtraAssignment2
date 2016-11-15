@@ -52,6 +52,11 @@ public class ProjectDAO{
 	public void setSession(SessionFactory session) {
 		this.session = session;
 	}
+
+	public static Object findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 
