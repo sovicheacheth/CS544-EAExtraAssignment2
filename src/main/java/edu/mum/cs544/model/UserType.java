@@ -1,5 +1,6 @@
 package edu.mum.cs544.model;
 
-public class UserType {
-
+public enum UserType {
+	VOLUNTEER,
+	ADMIN
 }
