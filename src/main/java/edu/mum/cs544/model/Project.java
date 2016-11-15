@@ -34,6 +34,22 @@ public class Project {
 	private String name;
 	private String desc;
 
+	public Project(int id, String name, String desc, Date startDate, Date endDate, Date status,
+			List<Beneficiaries> beneficiaries, byte[] pic, User createdBy, String location, List<Task> tasks) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.desc = desc;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.status = status;
+		this.beneficiaries = beneficiaries;
+		this.pic = pic;
+		this.createdBy = createdBy;
+		this.location = location;
+		this.tasks = tasks;
+	}
+
 	@Temporal(TemporalType.DATE)
 	private Date startDate;
 
@@ -46,17 +62,17 @@ public class Project {
 	@Enumerated(EnumType.STRING)
 	@OneToMany(cascade = { CascadeType.ALL })
 	@JoinTable(name = "project_Beneficiaries", joinColumns = @JoinColumn(name = "p_id"), inverseJoinColumns = @JoinColumn(name = "beneficiaries_id"))
-	private List<Beneficiaries> beneficiaries;	
-	
-	@Column(columnDefinition="LONGBLOB")
+	private List<Beneficiaries> beneficiaries;
+
+	@Column(columnDefinition = "LONGBLOB")
 	private byte[] pic;
-	
-	@ManyToOne(cascade={CascadeType.ALL})
+
+	@ManyToOne(cascade = { CascadeType.ALL })
 	private User createdBy;
-	
+
 	private String location;
-	
-	@OneToMany(mappedBy="project",cascade={CascadeType.ALL})
+
+	@OneToMany(mappedBy = "project", cascade = { CascadeType.ALL })
 	private List<Task> tasks;
 
 	public int getId() {
@@ -137,7 +153,5 @@ public class Project {
 		this.location = location;
 		this.tasks = tasks;
 	}
-	
-	
 
 }
