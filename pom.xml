@@ -131,6 +131,24 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>6.0.5</version>
 		</dependency>
+		<dependency>
+			<groupId>se.ivankrizsan.spring</groupId>
+			<artifactId>jparepositorycache</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>1.10.5.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.roo</groupId>
+			<artifactId>
+				org.springframework.roo.addon.layers.repository.jpa
+			</artifactId>
+			<version>2.0.0.M2</version>
+			<type>pom</type>
+		</dependency>
 	</dependencies>
     <build>
         <plugins>
